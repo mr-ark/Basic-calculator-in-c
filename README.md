@@ -1,4 +1,4 @@
 # Basic-calculator-in-c
 ##A basic calculater in c
 
-*proof:assets/
+*proof:screenshot (322).png
