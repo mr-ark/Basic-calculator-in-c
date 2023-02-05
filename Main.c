@@ -6,22 +6,29 @@ int main(void) {
     float result;
 	printf("Enter 2 numbers\n:");
     scanf("%d%d",&num1,&num2);
-    printf("1 for addition \n2 for subtraction \n3 for multiplication \n4 for dividion \n\nEnter your choice from above\n:");
+    printf("1 for addition \n2 for subtraction \n3 for multiplication \n4 for dividion\n5 for exit\n\nEnter your choice from above\n:");
     scanf("%d",&choice);
-    if(choice==1){
+    switch(choice){
+    case 1:
         result=num1+num2;
         printf("result=%f", result);
-    }else if(choice==2){
+        break;
+    case 2:
         result=num1-num2;
         printf("result=%f", result);
-    }else if(choice==3){
+        break;
+    case 3:
         result=num1*num2;
         printf("result=%f", result);
-    }else if(choice==4){
+        break;
+    case 4:
         result=num1/num2;
         printf("result=%f", result);
-    }else{
+        break;
+    case 5:
+           return EXIT_SUCCESS;
+           break;
+    default:
         printf("Noting for you!");
     }
-	return EXIT_SUCCESS;
 }
